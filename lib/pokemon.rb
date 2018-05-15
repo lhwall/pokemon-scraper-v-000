@@ -21,7 +21,7 @@ class Pokemon
   end 
   
   def alter_hp(new_health)
-    @db.execute()
+    @db.execute("SET hp ")
   end
   
 end
