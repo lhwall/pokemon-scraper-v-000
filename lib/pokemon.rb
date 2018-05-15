@@ -24,7 +24,6 @@ class Pokemon
     db.execute("UPDATE pokemon SET hp = ? WHERE id = ?", new_health, @id)
     query = db.execute("SELECT hp FROM pokemon WHERE id = ?", @id)
     @hp = query.flatten
-    binding.pry
   end
   
 end
