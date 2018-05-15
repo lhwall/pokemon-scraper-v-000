@@ -20,4 +20,7 @@ class Pokemon
     new_pokemon = Pokemon.new(name: query[0], type: query[1], id: id, db: db)
   end 
   
+  def alter_hp(new_health)
+  end
+  
 end
