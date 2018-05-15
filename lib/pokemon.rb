@@ -26,6 +26,5 @@ class Pokemon
     @hp = query.flatten
     binding.pry
   end
-  end 
   
 end
