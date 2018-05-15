@@ -18,11 +18,11 @@ class Pokemon
     query = db.execute("SELECT name, type FROM pokemon WHERE id = ?", id)
     query = query.flatten
     new_pokemon = Pokemon.new(name: query[0], type: query[1], id: id, db: db)
-    @binding.pry
   end 
   
   def alter_hp(new_health, db)
     db.execute("UPDATE pokemon SET hp = ? WHERE id = ?", new_health, @id)
+    binding.pry
   end 
   
 end
